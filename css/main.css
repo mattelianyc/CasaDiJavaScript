@@ -1,6 +1,29 @@
-.headingOneText {
+.heading-one-text {
     color: red;
 }
-.paragraphOne {
+.paragraph-one-text {
     color: purple;
 }
+
+button {
+    padding: 20px 40px;
+    margin: 0px 40px;
+    border: 6px solid orange;
+}
+button:hover {
+    border: 6px solid black;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+#Gary {
+    height: 300px;    
+}
+
+#Albert {
+    height: 300px;    
+}
+
