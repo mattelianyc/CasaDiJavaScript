@@ -49,9 +49,13 @@ function togglePhoto () {
         togglePhotoBtn.innerText = "Show me Gary!";
     }   
 }
-
+function openDialog ()  {
+    alert(
+        "oh no you clicked the red button!!"
+    )
+}
 // THIS IS A CONSOLE LOGGER
 console.log('output: ', document.getElementById('Button'))
 
 // // THIS IS A DEBUGGER TOOL *devtools*
-debugger;
+// debugger

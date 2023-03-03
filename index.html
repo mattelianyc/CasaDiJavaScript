@@ -6,21 +6,24 @@
 </head>
 <body>
 
-    <h1 class="heading-one-text">This is a Heading</h1>
-    <p class="paragraph-one">This is a paragraph.</p>
+    <div class="headerContent">
+        <h1 class="heading-one-text">This is a Heading</h1>
+        <p class="paragraph-one">This is a paragraph.</p>
+    </div>
     
-    <img id="Albert" src="./assets/images/guitarman.jpg" alt="albert">
-    <img id="Gary" class="display-none" src="./assets/images/gary.jpeg" alt="gary">
+    <div class="imageContent">
+        <img id="Albert" src="./assets/images/guitarman.jpg" alt="albert">
+        <img id="Gary" class="display-none" src="./assets/images/gary.jpeg" alt="gary">
+    </div>
 
-    <br/>
-    <br/>
-    
-    <button id="PhotoToggler" type="button" onclick="togglePhoto()">Show me Gary!</button>
+    <div class="buttonContent">
+        <button class="alert-button" type="button" onclick="openDialog()">click here</button>
+        <button id="PhotoToggler" type="button" onclick="togglePhoto()">Show me Gary!</button>
+    </div>
 
-    <br/>
-    <br/>
-
-    <a href="about.html">Link to about page</a>
+    <div class="navigationContent">
+        <a href="about.html">Link to about page</a>
+    </div>
 
     <script src="js/main.js"></script>
 
