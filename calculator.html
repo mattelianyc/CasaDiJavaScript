@@ -1,0 +1,20 @@
+<div>
+    <input type="number" id="FirstValue" name="first_value" required >
+    <b>+</b>
+    <input type="number" id="SecondValue" name="second_value" required >
+    <b>=</b>
+    <div id="SumOfValues"></div>
+
+    <button id="AddNumbersBtn" onclick="addNumbers()">Add Numbers</button>
+</div>
+
+<script>
+    function addNumbers () {
+        
+        let firstValue = Number(document.querySelector('#FirstValue').value);
+        let secondValue = Number(document.querySelector('#SecondValue').value);
+
+        document.querySelector('#SumOfValues').innerHTML = (firstValue+secondValue)
+
+    }
+</script>

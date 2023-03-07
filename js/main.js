@@ -29,6 +29,21 @@ for(index in object.weapons) {
     }
 }
 
+function insertHtml () {
+    document.querySelectorAll('div')
+        .forEach(el => {
+            // console.log('el ', el)
+            const fragment = document.createDocumentFragment();
+            const li = fragment
+            .appendChild(document.createElement("section"))
+            .appendChild(document.createElement("ul"))
+            .appendChild(document.createElement("li"));
+            li.textContent = "hello world";
+
+            el.appendChild(fragment)
+        })
+}
+
 // THIS IS A FUNCTION
 function togglePhoto () {
     let togglePhotoBtn = document.querySelector('#PhotoToggler');
@@ -49,6 +64,7 @@ function togglePhoto () {
         togglePhotoBtn.innerText = "Show me Gary!";
     }   
 }
+
 function openDialog ()  {
     alert(
         "oh no you clicked the red button!!"
